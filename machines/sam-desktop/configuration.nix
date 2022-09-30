@@ -5,6 +5,7 @@
     [
       ./hardware-configuration.nix
       ../common/desktop.nix
+      ../common/gaming.nix
       ../common/locale.nix
       ../common/nvidia.nix
       ../common/podman.nix
