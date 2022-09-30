@@ -2,7 +2,7 @@
 
 {
   imports = [
-    ./fonts.zsh
+    ./fonts.nix
   ];
 
   users.defaultUserShell = pkgs.zsh;
