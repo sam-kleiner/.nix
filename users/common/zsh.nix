@@ -3,7 +3,7 @@
 {
   programs.zsh = {
     enable = true;
-    dotDir = ".nix/users/common/zsh";
+    initExtra = "source ~/.nix/users/common/zsh/.zshrc";
 
     zplug = {
       enable = true;

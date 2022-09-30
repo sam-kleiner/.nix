@@ -1,1 +1,1 @@
-/nix/store/4c3ks196mk5g370q1jz8fmzmyp52nwz2-home-manager-files/.nix/users/common/zsh/.zshrc
+[ -f ~/.nix/users/common/zsh/.p10k.zsh ] && source ~/.nix/users/common/zsh/.p10k.zsh
