@@ -33,10 +33,11 @@
       ld = "ls -d */";                       # only directory"
       lh = "ls -ldh --color=auto .?*";       # only hidden dot files
       dev = "cd ~/dev";
-      devp = "cd ~/dev/python";
       devc = "cd ~/dev/c#";
       devj = "cd ~/dev/java";
-      devjs = "cd ~/dev/javascript";
+      devn = "cd ~/dev/node";
+      devp = "cd ~/dev/python";
+      devr = "cd ~/dev/rust";
       ".." = "cd ..";
       "..." = "cd ../..";
       "...." = "cd ../../..";
