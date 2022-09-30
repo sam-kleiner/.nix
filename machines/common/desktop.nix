@@ -18,6 +18,9 @@
     desktopManager.gnome.enable = true;
   };
 
+  # Enable dconf
+  programs.dconf.enable = true;
+
   # Configure keymap in X11
   # services.xserver.layout = "us";
   # services.xserver.xkbOptions = {
@@ -44,6 +47,7 @@
   # services.xserver.libinput.enable = true;
 
   environment.systemPackages = with pkgs; [
+    gnome.gnome-tweaks
     gnomeExtensions.caffeine
     gnomeExtensions.dash-to-dock
     gnomeExtensions.gnome-clipboard
