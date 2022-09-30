@@ -11,6 +11,7 @@
       ../common/podman.nix
       ../common/system-packages.nix
       ../common/virt.nix
+      ../common/zsh.nix
     ];
 
   # Use the systemd-boot EFI boot loader.
@@ -29,16 +30,16 @@
   users = {
     users = {
       sam = {
-    isNormalUser = true;
-    home = "/home/sam";
-    description = "Sam";
-    initialPassword = "password";
-    extraGroups = [ "wheel" "networkmanager" "libvirtd" ];
-  };
+        isNormalUser = true;
+        home = "/home/sam";
+        description = "Sam";
+        initialPassword = "password";
+        extraGroups = [ "wheel" "networkmanager" "libvirtd" ];
+      };
       other = {
-    isNormalUser = true;
-    home = "/home/other";
-    initialPassword = "password";
+        isNormalUser = true;
+        home = "/home/other";
+        initialPassword = "password";
       };
     };
   };
