@@ -15,6 +15,7 @@
     homeDirectory = "/home/sam";
     packages = with pkgs; [
       bitwarden-cli
+      direnv
       podman-compose
       podman-tui
     ];
