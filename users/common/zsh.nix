@@ -27,10 +27,11 @@
     shellAliases = {
       rebuild-nix = "cd ~/.nix && sudo nixos-rebuild switch --flake .# && cd -";
       ls = "ls --color=auto";
-      lsa = "ls -lah --color=auto";
-      lsm = "ls -lah --color=auto | more";
-      lsd = "ls -d */";                       # only directory"
-      lsh = "ls -ldh --color=auto .?*";       # only hidden dot files
+      ll = "ls -lh --color=auto";            # list long no hidden
+      la = "ls -lah --color=auto";           # list long with hidden"
+      lm = "ls -lah --color=auto | more";
+      ld = "ls -d */";                       # only directory"
+      lh = "ls -ldh --color=auto .?*";       # only hidden dot files
       dev = "cd ~/dev";
       devp = "cd ~/dev/python";
       devc = "cd ~/dev/c#";
