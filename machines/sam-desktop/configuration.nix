@@ -26,19 +26,21 @@
   networking.networkmanager.enable = true;
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.sam = {
+  users = {
+    users = {
+      sam = {
     isNormalUser = true;
     home = "/home/sam";
     description = "Sam";
     initialPassword = "password";
     extraGroups = [ "wheel" "networkmanager" "libvirtd" ];
   };
-
-  users.users.other = {
+      other = {
     isNormalUser = true;
     home = "/home/other";
-    description = "Other";
     initialPassword = "password";
+      };
+    };
   };
 
   # Enable the OpenSSH daemon.
