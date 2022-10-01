@@ -1,4 +1,7 @@
 alias rebuild-nix='cd ~/.nix && sudo nixos-rebuild switch --flake .# && cd -'
+alias update-nix='cd ~/.nix && nix flake update --commit-lock-file && cd -'
+
+alias c='clear'
 
 alias ls='exa --group-directories-first'
 alias ll='exa -lg --group-directories-first'
