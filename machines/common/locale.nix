@@ -12,4 +12,3 @@
   #   useXkbConfig = true; # use xkbOptions in tty.
   # };
 }
-

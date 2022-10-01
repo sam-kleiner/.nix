@@ -7,4 +7,3 @@
     extraPackages = [ pkgs.zfs ];
   };
 }
-
