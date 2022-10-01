@@ -13,6 +13,7 @@
     fd
     fzf
     jq
+    most
     nano
     ripgrep
     tldr
