@@ -7,6 +7,7 @@
       ../common/desktop.nix
       ../common/gaming.nix
       ../common/locale.nix
+      ../common/nix.nix
       ../common/nvidia.nix
       ../common/podman.nix
       ../common/system-packages.nix
@@ -54,10 +55,5 @@
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "22.05"; # Did you read the comment?
-
-  nix = {
-    # package = pkgs.nixFlakes;
-    extraOptions = "experimental-features = nix-command flakes";
-  };
 }
 
