@@ -39,6 +39,7 @@
       other = {
         isNormalUser = true;
         home = "/home/other";
+        description = "Other";
         initialPassword = "password";
       };
     };
