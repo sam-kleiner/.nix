@@ -20,10 +20,15 @@ ENABLE_CORRECTION="true"  # enable command auto-correction.
 CORRECT_IGNORE_FILE='.*'  # fix zsh corrections for ssh -> .ssh
 PROMPT_EOL_MARK=''        # remove % from incomplete EOL
 
-unsetopt BEEP
-
+########################################
+# Misc Shell Stuff
+########################################
 [ -f ~/.nix/users/common/zsh/.p10k.zsh ] && source ~/.nix/users/common/zsh/.p10k.zsh
 [ -f ~/.nix/users/common/zsh/.aliases ] && source ~/.nix/users/common/zsh/.aliases
+
+unsetopt BEEP
+
+export PAGER='most'
 
 ########################################
 # Python
