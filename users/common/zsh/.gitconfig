@@ -1,0 +1,36 @@
+[user]
+name = Sam Kleiner
+email = sam-kleiner@users.noreply.github.com
+[core]
+excludesfile = ~/.nix/users/common/zsh/.gitignore_global
+editor = code --wait
+pager = delta
+[interactive]
+diffFilter = delta --color-only
+[delta]
+side-by-side = true
+[init]
+defaultBranch = master
+[alias]
+a = add
+ap = add -p
+b = "!git for-each-ref --sort='-authordate' --format='%(authordate)%09%(objectname:short)%09%(refname)' refs/heads | sed -e 's-refs/heads/--'"
+br = branch
+c = commit --verbose
+ca = commit -a --verbose
+cam = commit -a -m
+ci = commit
+cm = commit -m
+cma = commit --amend -m
+co = checkout
+cob = checkout -b
+d = diff
+dc = diff --cached
+ds = diff --stat
+l = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short
+last = log -1 HEAD
+lh = "!git l | head"
+s = status
+spp = "!git stash --include-untracked && git pull && git stash pop"
+tidy= "!git branch --merged | egrep -v \"(^\\*|master|main|dev|develop|release-*)\" | xargs git branch -d"
+unstage = reset HEAD --

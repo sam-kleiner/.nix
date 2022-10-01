@@ -21,10 +21,16 @@
     ];
   };
 
-  programs.git = {
-    enable = true;
-    userName  = "Sam Kleiner";
-    userEmail = "sam-kleiner@users.noreply.github.com";
+  programs = {
+    git = {
+      enable = true;
+      delta.enable = true;
+      includes = [
+        { path = "~/.nix/users/common/zsh/.gitconfig"; }
+      ];
+    };
+
+    gitui.enable = true;
   };
 
   # This value determines the Home Manager release that your
