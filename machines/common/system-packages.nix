@@ -14,6 +14,7 @@
     fzf
     nano
     ripgrep
+    tldr
     wget
   ];
 }
