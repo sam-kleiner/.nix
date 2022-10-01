@@ -12,6 +12,7 @@
     exa
     fd
     fzf
+    jq
     nano
     ripgrep
     tldr
