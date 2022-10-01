@@ -15,10 +15,13 @@
     homeDirectory = "/home/sam";
     packages = with pkgs; [
       bitwarden-cli
+      cargo
       direnv
+      gcc
       podman-compose
       podman-tui
       python3Full
+      rustc
     ];
   };
 
