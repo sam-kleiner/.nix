@@ -3,12 +3,12 @@ alias update-nix='cd ~/.nix && nix flake update --commit-lock-file && cd -'
 
 alias c='clear'
 
-alias ls='exa --group-directories-first'
-alias ll='exa -lg --group-directories-first'
-alias la='exa -lag --group-directories-first'
-alias ld='exa -Dg --group-directories-first'
-alias lh='exa -ldg .* --group-directories-first'
-alias lm='exa -lag | more'
+alias ls='exa --group-directories-first --icons'
+alias ll='exa -lg --group-directories-first --icons'
+alias la='exa -lag --group-directories-first --icons'
+alias ld='exa -Dg --group-directories-first --icons'
+alias lh='exa -ldg .* --group-directories-first --icons'
+alias lm='exa -lag | most'
 
 alias dev='cd ~/dev'
 alias devc='cd ~/dev/c#'
