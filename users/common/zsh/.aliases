@@ -1,0 +1,22 @@
+alias rebuild-nix='cd ~/.nix && sudo nixos-rebuild switch --flake .# && cd -'
+
+alias ls='exa --group-directories-first'
+alias ll='exa -lg --group-directories-first'
+alias la='exa -lag --group-directories-first'
+alias ld='exa -Dg --group-directories-first'
+alias lh='exa -ldg .* --group-directories-first'
+alias lm='exa -lag | more'
+
+alias dev='cd ~/dev'
+alias devc='cd ~/dev/c#'
+alias devj='cd ~/dev/java'
+alias devn='cd ~/dev/node'
+alias devp='cd ~/dev/python'
+alias devr='cd ~/dev/rust'
+
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias ......='cd ../../../../..'
+alias .......='cd ../../../../../..'
