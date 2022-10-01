@@ -3,6 +3,10 @@ alias update-nix='cd ~/.nix && nix flake update --commit-lock-file && cd -'
 
 alias c='clear'
 
+alias cat='bat'
+alias less='most'
+alias more='most'
+
 alias ls='exa --group-directories-first --icons'
 alias ll='exa -lg --group-directories-first --icons'
 alias la='exa -lag --group-directories-first --icons'
