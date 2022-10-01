@@ -7,7 +7,11 @@
 
   environment.systemPackages = with pkgs; [
     autojump
+    bat
     btop
+    exa
+    fd
+    fzf
     nano
     ripgrep
     wget
