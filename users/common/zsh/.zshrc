@@ -41,4 +41,6 @@ if [ -x "$(command -v pyenv)" ]; then
     eval "$(pyenv init --path)"
     eval "$(pyenv init -)"
     eval "$(pyenv virtualenv-init -)"
+else
+    curl https://pyenv.run | zsh
 fi

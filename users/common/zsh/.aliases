@@ -23,3 +23,14 @@ alias ....='cd ../../..'
 alias .....='cd ../../../..'
 alias ......='cd ../../../../..'
 alias .......='cd ../../../../../..'
+
+venv() {
+    VENV_NAME=${PWD##*/}
+    VENV_DIR=~/.pyenv/versions/$VENV_NAME
+    if [ -d $VENV_DIR ]; then
+        pyenv local $VENV_NAME
+    else
+        pyenv virtualenv $(pyenv global) $VENV_NAME
+        pyenv local $VENV_NAME
+    fi
+}

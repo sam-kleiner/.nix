@@ -18,6 +18,7 @@
       direnv
       podman-compose
       podman-tui
+      python3Full
     ];
   };
 
