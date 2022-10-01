@@ -46,6 +46,6 @@ if [ -x "$(command -v pyenv)" ]; then
     eval "$(pyenv init --path)"
     eval "$(pyenv init -)"
     eval "$(pyenv virtualenv-init -)"
-else
+elif [ ! -d /home/sam/.pyenv ]; then
     curl https://pyenv.run | zsh
 fi
