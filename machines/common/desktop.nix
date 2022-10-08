@@ -6,18 +6,14 @@
   services.xserver = {
     enable = true;
     displayManager = {
-      # lightdm = {
-      #   enable = true;
-      #   # extraConfig = "autologin-guest=false\nautologin-user=sam\nautologin-user-timeout=0";
-      # };
       gdm = {
         enable = true;
         wayland = true;
       };
-      # autoLogin = {
-      #  enable = true;
-      #  user = "sam";
-      # };
+      autoLogin = {
+       enable = true;
+       user = "sam";
+      };
     };
     desktopManager.gnome.enable = true;
   };
