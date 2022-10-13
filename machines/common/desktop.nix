@@ -18,6 +18,11 @@
     desktopManager.gnome.enable = true;
   };
 
+  # hack to fix auto login
+  # https://github.com/NixOS/nixpkgs/issues/103746#issuecomment-945091229
+  systemd.services."getty@tty1".enable = false;
+  systemd.services."autovt@tty1".enable = false;
+
   # Enable dconf
   programs.dconf.enable = true;
 
