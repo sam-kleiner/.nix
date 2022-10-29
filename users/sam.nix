@@ -18,8 +18,19 @@
       bitwarden
       firefox-wayland
       virt-manager
-      vscode
     ];
+  };
+
+  programs.vscode = {
+    enable = true;
+    package = pkgs.vscode.fhsWithPackages (ps: with ps;
+      [
+        openssl.dev
+        pkg-config
+        rustup
+        zlib
+      ]
+    );
   };
 
   # This value determines the Home Manager release that your
