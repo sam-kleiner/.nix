@@ -14,9 +14,12 @@
     username = "sam";
     homeDirectory = "/home/sam";
     packages = with pkgs; [
+      appimage-run
       beekeeper-studio
       bitwarden
+      calibre
       firefox-wayland
+      protonvpn-gui
       virt-manager
     ];
   };
