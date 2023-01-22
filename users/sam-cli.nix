@@ -18,6 +18,7 @@
       cargo
       direnv
       gcc
+      kubectl
       podman-compose
       podman-tui
       python3Full
