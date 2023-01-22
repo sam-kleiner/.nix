@@ -18,6 +18,7 @@
       cargo
       direnv
       gcc
+      k9s
       kubectl
       podman-compose
       podman-tui
